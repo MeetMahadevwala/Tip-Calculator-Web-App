@@ -206,6 +206,6 @@ function resetCalculator(){
 // ============================================\\
 //           Initial Execution
 // ============================================\\
-document.addEventListener('DOMContentLoaded', () => {
-    calculateTip();
-});
+// document.addEventListener('DOMContentLoaded', () => {
+//     calculateTip();
+// });
