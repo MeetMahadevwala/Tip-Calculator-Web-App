@@ -88,7 +88,7 @@ function calculateTip() {
         actualTipPercent = customTipPercent;
     }
     else if (customTipValueStr === '') {
-        const activeButton = document.querySelector('.tip-percent-btn');
+        const activeButton = document.querySelector('.tip-percent-btn.active');
         if(activeButton){
             const selectedButtonTipPercent = parseFloat(activeButton.dataset.tip);
             if(!isNaN(selectedButtonTipPercent) && selectedButtonTipPercent >= 0){
@@ -161,7 +161,7 @@ function calculateTip() {
     }
     if (customTipInput) {
         let showErrorForCustomTip = !isCustomInputValid;
-        activeButton = document.querySelector('.tip-percent-btn');
+        activeButton = document.querySelector('.tip-percent-btn.active');
         if(customTipInput.value === '' && activeButton){
             showErrorForCustomTip = false;
         }
